@@ -5,6 +5,7 @@ import Depense.Depense;
 import java.util.ArrayList;
 
 public class User {
+    private int id;
     private String Username;
     private double budgetMensuel;
     private ArrayList<Depense> depense;
@@ -13,7 +14,12 @@ public class User {
         this.budgetMensuel = budgetMensuel;
         this.depense = depense;
     }
-
+    public int getId() {
+        return id;
+    }
+    public void setId(int id) {
+        this.id = id;
+    }
     public String getUsername() {
         return Username;
     }
@@ -39,6 +45,10 @@ public class User {
     }
     public void addDepense(Depense depense) {
         this.depense.add(depense);
+        System.out.println(depense+"est ajouter dans la liste");
+
+    }
+    public void voirDepense(Depense depense) {
 
     }
 }

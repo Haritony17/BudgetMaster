@@ -2,7 +2,7 @@ package Depense;
 
 import java.time.LocalDate;
 
-public enum Depense {
+public class Depense {
     ;
     private String description;
   private double montant;
